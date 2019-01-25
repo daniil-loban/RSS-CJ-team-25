@@ -1,0 +1,36 @@
+.teammate {
+  display: flex;
+  box-sizing:border-box;
+  flex-direction: row;
+  align-items: center;
+  min-width: 400px;
+  padding: 48px;
+}
+
+.teammate-about{
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+
+.teammate-caption {
+  font-size: 48px;
+  margin-top: 0px;
+  margin-bottom: 32px;
+  margin-left: 48px;
+  font-weight: normal;
+}
+
+.teammate-text {
+  display: block;
+  font-size: 24px;
+  max-height: 110px;
+  margin: 0 0 0 48px ;
+  overflow: hidden;
+}
+
+.teammate-photo {
+  align-self: center;
+  width: 200px;
+  height: 200px;
+}
