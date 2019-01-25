@@ -1,0 +1,135 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  background-color: #474E5D;
+}
+
+.timeline * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 6px;
+  margin-left: -3px;
+  background-color: #FFF;
+}
+
+.timeline__container {
+  position: relative;
+  width: 50%;
+  padding: 10px 40px;
+}
+
+.timeline__container_left {left: 0}
+
+.timeline__container_left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.timeline__container_left::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline__container_right {left: 50%}
+
+.timeline__container_right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.timeline__container_right::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  left: -16px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline__item {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 6px;
+  background-color: #FFF;
+}
+
+.timeline__header {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.timeline__text {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+
+  .timeline__container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .timeline__container_right {left: 0}
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline__container_left::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .timeline__container_right::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  .timeline__container_left::after,
+  .timeline__container_right::after {
+    left: 15px;
+  }
+}
