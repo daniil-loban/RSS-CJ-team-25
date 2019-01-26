@@ -37,6 +37,7 @@ header {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header-link {
@@ -51,7 +52,10 @@ header {
 .header-link:hover {
   cursor: pointer;
 }
-
+.lang-button {
+  align-self: flex-end;
+  font-size: var(--font-big);
+}
 
 main {
   background-color: var(--main-bg-color);

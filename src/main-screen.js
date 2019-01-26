@@ -50,7 +50,7 @@ class MainScreen extends Component {
       <header>
         <button class="header-link">ARCHITECTS</button>
         <button class="header-link" onClick={this.showTeam}>TEAM</button>
-        <button class="header-link"><Icon>language</Icon></button>
+        <button class="header-link lang-button"><Icon className="lang-button">language</Icon></button>
       </header>
       <main>
         <Architect data={TestArchitect} />
