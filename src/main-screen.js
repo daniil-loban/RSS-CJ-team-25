@@ -6,6 +6,7 @@ import ModalDialog from './components/modal-dialog/modal-dialog';
 import Timeline from './components/Timeline/Timeline';
 import Team from './components/team/team';
 import Architect from './components/architect/architect';
+import Map from './components/map/map';
 
 import teamFileEn from './locale/en/team.json';
 
@@ -35,6 +36,26 @@ const TestArchitect = {
   ],
 };
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+const geo = {
+  center: [55.666, 66.666],
+  points: [
+    {
+      coords: [55.667, 66,667],
+      description: 'Lived here in childhood'
+    },
+    {
+      coords: [55.665, 66.665],
+      description: 'Smoked crack here'
+    }
+  ]
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+
 class MainScreen extends Component {
   showTeam() {
     ReactDOM.render(<Team data={teamFileEn.team} />, document.querySelector('.popup-container'));
@@ -48,6 +69,7 @@ class MainScreen extends Component {
       </header>
       <main>
         <Architect data={TestArchitect} />
+        <Map data={geo} />
       </main>
       <footer class="popup-container">
       </footer>
