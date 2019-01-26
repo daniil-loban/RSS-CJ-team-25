@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   min-width: 400px;
-  padding: 48px;
+  padding: 0;
 }
 
 .teammate-about{
@@ -33,4 +33,11 @@
   align-self: center;
   width: 200px;
   height: 200px;
+}
+
+.teammate_architect-name {
+  color: var(--font-color-white-headings);
+}
+.teammate_architect-text {
+  color: var(--font-color-white-text);
 }

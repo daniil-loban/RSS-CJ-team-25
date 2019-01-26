@@ -1,5 +1,5 @@
 {
-  "name": "rolling_scopes_game_auseika",
+  "name": "rss-dream-team-codejam",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -9,7 +9,7 @@
     "build": "webpack --mode production"
   },
   "keywords": [],
-  "author": "auseika",
+  "author": "RSS Team 25",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.2.0",

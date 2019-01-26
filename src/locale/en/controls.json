@@ -1,0 +1,10 @@
+{
+    "header": {
+        "architects": "ARCHITECTS",
+        "team": "TEAM",
+      },
+	"main": {
+		"search": "search",
+		"today": "Architect of the day:"
+	}
+  }

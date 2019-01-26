@@ -1,0 +1,59 @@
+:root {
+  --main-bg-color: #474E5D;
+  --header-color: #262626;
+
+  --header-height: 80px;
+
+  --font-color-white-headings: #F2F2F2;
+  --font-color-white-text: #C4C4C4;
+  --font-color-white-gray: rgb(105, 105, 105);
+
+  --font-big: 48px;
+  --font-medium: 24px;
+  --font-small: 16px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+}
+
+body {
+  margin: 0;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.page {
+  padding-top: var(--header-height);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);;
+  background-color: var(--header-color);
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+}
+
+.header-link {
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  font-size: var(--font-big);
+  color: var(--font-color-white-headings);
+  margin: 0 10px;
+}
+.header-link:hover {
+  cursor: pointer;
+}
+
+
+main {
+  background-color: var(--main-bg-color);
+}
+
