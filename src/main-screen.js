@@ -1,5 +1,10 @@
 import ReactDOM from 'react-dom';
 import React, { Component } from 'react';
+
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+import Icon from '@material-ui/core/Icon';
+
 import './main-screen.css';
 
 import ModalDialog from './components/modal-dialog/modal-dialog';
@@ -66,6 +71,7 @@ class MainScreen extends Component {
       <header>
         <button class="header-link">ARCHITECTS</button>
         <button class="header-link" onClick={this.showTeam}>TEAM</button>
+        <button class="header-link lang-button"><Icon className="lang-button">language</Icon></button>
       </header>
       <main>
         <Architect data={TestArchitect} />
