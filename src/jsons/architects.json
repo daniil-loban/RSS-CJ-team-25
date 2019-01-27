@@ -1,8 +1,8 @@
 [
   {
-    "name": "Langbard",
+    "name": "Лангбард Иосиф Григорьевич",
     "about": "1882 - 1951",
-    "photo": "Architect_Langbard_Iosif_Grigorevich[1].jpg",
+    "photo": "./img/architects/Langbard.jpg",
     "timeline": [
       {
         "year": 1882,
@@ -61,17 +61,17 @@
       {
         "name": "Беларускі дзяржаўны тэатр оперы і балета(1936-1937 гг.)у Мінску",
         "year": 1937,
-        "photo": "Langbard_1.jpg"
+        "photo": "./img/buildings/Langbard_1.jpg"
       },
       {
         "name": "Дом Чырвонай Арміі (цяпер Дом афіцэраў) (1934-1939 гг.) у Мінску",
         "year": 1939,
-        "photo": "Langbard_2.jpg"
+        "photo": "./img/buildings/Langbard_2.jpg"
       },
       {
         "name": "Дом Саветаў (1938-1939 гг.) У Магілёве",
         "year": 1939,
-        "photo": "Langbard_3.jpg"
+        "photo": "./img/buildings/Langbard_3.jpg"
       }
     ],
     "videos": [
@@ -83,9 +83,9 @@
     ]
   },
   {
-    "name": "Karol",
+    "name": "Кароль Уладзімір Адамовіч",
     "about": "1912 - 1980",
-    "photo": "Karol_VA[1].jpg",
+    "photo": "./img/architects/Karol.jpg",
     "timeline": [
       {
         "year": 1912,
@@ -144,24 +144,24 @@
       {
         "name": "Галоўпаштамт (Белпошта), Мінск",
         "year": 1953,
-        "photo": "Karol_1.jpg"
+        "photo": "./img/buildings/Karol_1.jpg"
       },
       {
         "name": "Манумент Перамогі (Мінск)",
         "year": 1954,
-        "photo": "Karol_2.jpg"
+        "photo": "./img/buildings/Karol_2.jpg"
       },
       {
         "name": "Будынак Цэнтральнага тэлеграфа ў Мінску",
         "year": 1948,
-        "photo": "Karol_3.jpg"
+        "photo": "./img/buildings/Karol_3.jpg"
       }
     ]
   },
   {
-    "name": "Baklanau",
+    "name": "Бакланаў Міхал Іванавіч",
     "about": "1914 - 1990",
-    "photo": "Михаил_Иванович_Бакланов[1].jpg",
+    "photo": "./img/architects/Baklanau.jpg",
     "timeline": [
       {
         "year": 1914,
@@ -220,24 +220,24 @@
       {
         "name": "Кінатэатр “Перамога” ў Мінску",
         "year": 1948,
-        "photo": "Baklanau_1.jpg"
+        "photo": "./img/buildings/Baklanau_1.jpg"
       },
       {
         "name": "Нацыянальны мастацкі музей Рэспублікі Беларусь",
         "year": 1957,
-        "photo": "Baklanau_2.jpg"
+        "photo": "./img/buildings/Baklanau_2.jpg"
       },
       {
         "name": "Мінскі дзяржаўны архітэктурна-будаўнічы каледж",
         "year": 1954,
-        "photo": "Baklanau_3.jpg"
+        "photo": "./img/buildings/Baklanau_3.jpg"
       }
     ]
   },
   {
-    "name": "Vionau",
+    "name": "Воінаў Аляксандр Пятровіч",
     "about": "1902 - 1987",
-    "photo": "img-01[1].jpg",
+    "photo": "./img/architects/Vionau.jpg",
     "timeline": [
       {
         "year": 1902,
@@ -304,24 +304,24 @@
       {
         "name": "Рэзідэнцыя Прэзідэнта Рэспублікі Беларусь",
         "year": 1947,
-        "photo": "Vionau_1.jpg"
+        "photo": "./img/buildings/Vionau_1.jpg"
       },
       {
         "name": "Беларускі рэспубліканскі тэатр юнага гледача",
         "year": 1956,
-        "photo": "Vionau_2.jpg"
+        "photo": "./img/buildings/Vionau_2.jpg"
       },
       {
         "name": "Будынак Вышэйшай партыйнай школы",
         "year": 1940,
-        "photo": "Vionau_3.jpg"
+        "photo": "./img/buildings/Vionau_3.jpg"
       }
     ]
   },
   {
-    "name": "Zaborskij",
+    "name": "Заборскі Георгі Уладзіміравіч",
     "about": "1909 - 1999",
-    "photo": "image006[1].jpg",
+    "photo": "./img/architects/Zaborskij.jpg",
     "timeline": [
       {
         "year": 1909,
@@ -368,24 +368,24 @@
       {
         "name": "Манумент Перамогі (Мінск)",
         "year": 1954,
-        "photo": "Zaborskij_1.jpg"
+        "photo": "./img/buildings/Zaborskij_1.jpg"
       },
       {
         "name": "Помнік Якубу Коласу на аднайменнай плошчы ў Мінску",
         "year": 1972,
-        "photo": "Zaborskij_2.jpg"
+        "photo": "./img/buildings/Zaborskij_2.jpg"
       },
       {
         "name": "Сувораўскае вучылішча ў Мінску",
         "year": 1953,
-        "photo": "Zaborskij_3.jpg"
+        "photo": "./img/buildings/Zaborskij_3.jpg"
       }
     ]
   },
   {
-    "name": "Shabunevski",
+    "name": "Шабунеўскi Стась Даніловіч",
     "about": "1866-1937",
-    "photo": "Станіслаў_Шабунеўскі[1].jpg",
+    "photo": "./img/architects/Shabunevski.jpg",
     "timeline": [
       {
         "year": 1866,
@@ -428,24 +428,24 @@
       {
         "name": "Будынак былой гомельскай Александроўскай мужчынскай гімназіі",
         "year": 1898,
-        "photo": "Shabunevski_1.jpg"
+        "photo": "./img/buildings/Shabunevski_1.jpg"
       },
       {
         "name": "Будынак былога Віленскага камерцыйнага банка",
         "year": 1903,
-        "photo": "Shabunevski_2.jpg"
+        "photo": "./img/buildings/Shabunevski_2.jpg"
       },
       {
         "name": "Былы даходны дом купца К. П. Грошыкава",
         "year": 1909,
-        "photo": "Shabunevski_3.jpg"
+        "photo": "./img/buildings/Shabunevski_3.jpg"
       }
     ]
   },
   {
-    "name": "Levin",
+    "name": "Левін Леанід Мендзялевіч",
     "about": "1936-2014",
-    "photo": "Levin_Leonid_Mendele[1].jpg",
+    "photo": "./img/architects/Levin.jpg",
     "timeline": [
       {
         "year": 1936,
@@ -480,24 +480,24 @@
       {
         "name": "Будынак былога ВДНГ",
         "year": 1968,
-        "photo": "Levin_1.jpg"
+        "photo": "./img/buildings/Levin_1.jpg"
       },
       {
         "name": "Хатынь",
         "year": 1969,
-        "photo": "Levin_2.jpg"
+        "photo": "./img/buildings/Levin_2.jpg"
       },
       {
         "name": "Парк ім. 50-годдзя Савецкай улады",
         "year": 1967,
-        "photo": "Levin_3.jpg"
+        "photo": "./img/buildings/Levin_3.jpg"
       }
     ]
   },
   {
-    "name": "Parusnikau",
+    "name": "Паруснікаў Міхал Паўлавіч",
     "about": "1893-1968",
-    "photo": "Parusnikov[1].jpg",
+    "photo": "./img/architects/Parusnikau.jpg",
     "timeline": [
       {
         "year": 1913,
@@ -520,17 +520,17 @@
       {
         "name": "Будынак КДБ Беларусі",
         "year": 1947,
-        "photo": "Parusnikau_1.jpg"
+        "photo": "./img/buildings/Parusnikau_1.jpg"
       },
       {
         "name": "Спартыўны комплекс Дынама ў мінску",
         "year": 1954,
-        "photo": "Parusnikau_2.jpg"
+        "photo": "./img/buildings/Parusnikau_2.jpg"
       },
       {
         "name": "Будынак Нацбанка РБ",
         "year": 1950,
-        "photo": "Parusnikau_3.jpg"
+        "photo": "./img/buildings/Parusnikau_3.jpg"
       }
     ]
   }
