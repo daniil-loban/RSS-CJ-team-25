@@ -1,0 +1,7 @@
+.architect {
+  display: flex;
+}
+.architect__info {
+  display: flex;
+  flex-direction: column;
+}

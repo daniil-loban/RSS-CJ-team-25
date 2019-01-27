@@ -1,0 +1,7 @@
+.architect-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+  height: calc(100vh - var( --header-height));
+}
