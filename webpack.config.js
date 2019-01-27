@@ -1,4 +1,7 @@
 /* eslint-disable */
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -6,7 +9,20 @@ module.exports = {
     publicPath: '',
     filename: 'js/bundle.js'
   },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: path.join(__dirname, 'src/img/architects'), to: 'img/architects', flatten: true },
+      { from: path.join(__dirname, 'src/img/buildings'), to: 'img/buildings', flatten: true },
 
+      // { from: path.join(__dirname, 'src//*.jpg'), to: 'img', flatten: true },
+      // { from: path.join(__dirname, 'src//.svg'), to: 'images', flatten: true },
+      // { from: path.join(__dirname, 'src/**/.mp3'), to: 'sounds', flatten: true },
+      // { from: path.join(__dirname, 'src/*/.wav'), to: 'audio', flatten: true },
+      // { from: path.join(__dirname, 'src//*.ttf'), to: 'fonts', flatten: true },
+      // { from: path.join(__dirname, 'src//.otf'), to: 'fonts', flatten: true },
+      // { from: path.join(__dirname, 'src/**/.json'), to: 'jsons', flatten: true },
+    ], {}),
+  ],
   module: {
     rules: [
       {

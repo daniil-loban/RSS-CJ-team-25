@@ -1,4 +1,5 @@
 .idea
 node_modules
 *.log
-dist/js/bundle.js
+dist/js/*
+dist/img/*

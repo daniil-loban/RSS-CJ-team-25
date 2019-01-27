@@ -10,7 +10,7 @@ export default class Teammate extends Component {
 
   render() {
     return (
-      <article className="teammate">
+      <article className="teammate" onClick={this.props.onClick}>
         <div className="teammate-photo">
           <PhotoAvatar alt={this.props.data.name} img={this.props.data.photo} />
         </div>

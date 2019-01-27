@@ -13,14 +13,19 @@ import Team from './components/team/team';
 import Architect from './components/architect/architect';
 import Map from './components/map/map';
 
+import ArchitectList from './components/architect-list/architect-list';
 
 import ControlsEn from './locale/en/controls.json';
-import ControlsBy from './locale/by/controls.json';
-import ControlsRu from './locale/ru/controls.json';
-
 import TeamEn from './locale/en/team.json';
+import ContentEn from './locale/en/architects.json';
+
+import ControlsBy from './locale/by/controls.json';
 import TeamBy from './locale/by/team.json';
+import ContentBy from './locale/by/architects.json';
+
+import ControlsRu from './locale/ru/controls.json';
 import TeamRu from './locale/ru/team.json';
+import ContentRu from './locale/ru/architects.json';
 
 
 const TestArchitect = {
@@ -53,21 +58,6 @@ const TestArchitect = {
 // global.controlsLang = ControlsBy;
 // global.teamLang = TeamBy;
 
-const geo = {
-  center: [55.666, 66.666],
-  points: [
-    {
-      coords: [55.667, 66, 667],
-      description: 'Lived here in childhood'
-    },
-    {
-      coords: [55.665, 66.665],
-      description: 'Smoked crack here'
-    }
-  ]
-}
-
-
 class MainScreen extends Component {
   constructor() {
     super();
@@ -84,6 +74,9 @@ class MainScreen extends Component {
     this.setState({ anchorEl: null });
   }
 
+  showArchitects() {
+    ReactDOM.render(<ArchitectList data={global.contentLang} />, document.getElementById('content'));
+  }
 
   showTeam() {
     ReactDOM.render(<Team data={global.teamLang.team} />, document.querySelector('.popup-container'));
@@ -94,14 +87,17 @@ class MainScreen extends Component {
       case 'En':
         global.controlsLang = ControlsEn;
         global.teamLang = TeamEn;
+        global.contentLang = ContentEn;
         break;
       case 'By':
         global.controlsLang = ControlsBy;
         global.teamLang = TeamBy;
+        global.contentLang = ContentBy;
         break;
       case 'Ru':
         global.controlsLang = ControlsRu;
         global.teamLang = TeamRu;
+        global.contentLang = ContentRu;
         break;
       default:
         break;
@@ -114,7 +110,7 @@ class MainScreen extends Component {
     const { anchorEl } = this.state;
     return <div class="page">
       <header>
-        <button class="header-link">{global.controlsLang.header.architects}</button>
+        <button class="header-link" onClick={this.showArchitects}>{global.controlsLang.header.architects}</button>
         <button class="header-link" onClick={this.showTeam}>{global.controlsLang.header.team}</button>
         <button class="header-link lang-button"
           onClick={(e) => { this.handleClick(e); }}
@@ -147,12 +143,12 @@ class MainScreen extends Component {
             Ru
           </MenuItem>
         </Menu>
-
       </header>
-      <main>
-        <Architect data={TestArchitect} />
-        <Map data={geo} />
+
+      <main id="content">
+        {/* <Map data={geo} /> */}
       </main>
+
       <footer class="popup-container">
       </footer>
     </div>;
