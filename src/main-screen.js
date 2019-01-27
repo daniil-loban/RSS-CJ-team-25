@@ -53,9 +53,6 @@ const TestArchitect = {
 // global.controlsLang = ControlsBy;
 // global.teamLang = TeamBy;
 
-
-///////////////////////////////////////////////////////////////////////////////////////
-
 const geo = {
   center: [55.666, 66.666],
   points: [
@@ -70,7 +67,6 @@ const geo = {
   ]
 }
 
-////////////////////////////////////////////////////////////////////////////////////////
 
 class MainScreen extends Component {
   constructor() {
