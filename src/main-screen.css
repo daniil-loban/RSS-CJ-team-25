@@ -53,7 +53,7 @@ header {
   cursor: pointer;
 }
 .lang-button {
-  align-self: flex-end;
+  display: flex;
   font-size: var(--font-big);
 }
 

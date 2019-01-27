@@ -12,7 +12,15 @@ import Timeline from './components/Timeline/Timeline';
 import Team from './components/team/team';
 import Architect from './components/architect/architect';
 
-import teamFileEn from './locale/en/team.json';
+
+import ControlsEn from './locale/en/controls.json';
+import ControlsBy from './locale/by/controls.json';
+import ControlsRu from './locale/ru/controls.json';
+
+import TeamEn from './locale/en/team.json';
+import TeamBy from './locale/by/team.json';
+import TeamRu from './locale/ru/team.json';
+
 
 const TestArchitect = {
   name: 'Лангбард Иосиф Григорьевич',
@@ -40,20 +48,92 @@ const TestArchitect = {
   ],
 };
 
+// <Architect data={TestArchitect} /> - passing single architect
+// global.controlsLang = ControlsBy;
+// global.teamLang = TeamBy;
+
 class MainScreen extends Component {
+  constructor() {
+    super();
+    this.state = {
+      anchorEl: null,
+    };
+  }
+
+  handleClick(e) {
+    this.setState({ anchorEl: e.currentTarget });
+  }
+
+  handleClose() {
+    this.setState({ anchorEl: null });
+  }
+
+
   showTeam() {
-    ReactDOM.render(<Team data={teamFileEn.team} />, document.querySelector('.popup-container'));
+    ReactDOM.render(<Team data={global.teamLang.team} />, document.querySelector('.popup-container'));
+  }
+
+  changeLang(e) {
+    switch (e) {
+      case 'En':
+        global.controlsLang = ControlsEn;
+        global.teamLang = TeamEn;
+        break;
+      case 'By':
+        global.controlsLang = ControlsBy;
+        global.teamLang = TeamBy;
+        break;
+      case 'Ru':
+        global.controlsLang = ControlsRu;
+        global.teamLang = TeamRu;
+        break;
+      default:
+        break;
+    }
+    this.handleClose();
+    ReactDOM.render(<MainScreen />, document.querySelector('body'));
   }
 
   render() {
+    const { anchorEl } = this.state;
     return <div class="page">
       <header>
-        <button class="header-link">ARCHITECTS</button>
-        <button class="header-link" onClick={this.showTeam}>TEAM</button>
-        <button class="header-link lang-button"><Icon className="lang-button">language</Icon></button>
+        <button class="header-link">{global.controlsLang.header.architects}</button>
+        <button class="header-link" onClick={this.showTeam}>{global.controlsLang.header.team}</button>
+        <button class="header-link lang-button"
+          onClick={(e) => { this.handleClick(e); }}
+          aria-owns={anchorEl ? 'simple-menu' : undefined}
+          aria-haspopup='true'
+        ><Icon className="lang-button">language</Icon></button>
+        <Menu
+          className='lang-menu'
+          id='simple-menu'
+          anchorEl={anchorEl}
+          open={Boolean(anchorEl)}
+          onClose={() => { this.handleClose(); }}
+        >
+          <MenuItem
+            className='lang-menu__item'
+            onClick={() => this.changeLang('En')}
+          >
+            En
+          </MenuItem>
+          <MenuItem
+            className='lang-menu__item'
+            onClick={() => this.changeLang('By')}
+          >
+            By
+          </MenuItem>
+          <MenuItem
+            className='lang-menu__item'
+            onClick={() => this.changeLang('Ru')}
+          >
+            Ru
+          </MenuItem>
+        </Menu>
+
       </header>
       <main>
-        <Architect data={TestArchitect} />
       </main>
       <footer class="popup-container">
       </footer>
